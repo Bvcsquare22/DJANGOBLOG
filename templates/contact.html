@@ -1,0 +1,36 @@
+
+ {% extends "layout.html" %}
+   {% load static %}
+ 
+{% block main %}
+       
+  <h2>Contact Me</h2>
+   <br /><br />
+   <p class="contactp">Feel free to reach out for collaborations or just a friendly hello!</p>
+   <br /><br />
+      
+
+
+   <form action="" class="Container" method="post">
+     
+      <div class="myform">
+      {% csrf_token %}
+     <input type="text" name="name" placeholder="Your Name">
+     <input type="email" name="email" placeholder="Your Email">
+     <textarea name="message" placeholder="Your Message"></textarea>
+     <button type="submit">Send</button>
+
+
+
+      </div>
+     
+
+
+
+
+   </form>
+
+
+   
+      
+    {% endblock main %}

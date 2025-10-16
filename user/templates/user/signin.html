@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block main  %}
+
+{% comment %} <h1>User Login page</h1> {% endcomment %}
+
+<form action="" class="blogform" method="post">
+    {% csrf_token %}
+    {{form}}
+    <button>Sign in</button>
+
+    <br><br>
+    <p>
+        don't have an account? sign up 
+        <a href="{% url 'userSignup'%}" class="signup"> here</a>
+    </p>
+</form>
+
+
+{% endblock main %}
+
+
